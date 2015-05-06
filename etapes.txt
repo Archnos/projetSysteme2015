@@ -1,0 +1,25 @@
+étapes :
+
+1)  compréhension du sujet
+2)  modélisation du sujet
+	1. modélisation des données
+	2. modélisation du SGF
+	3. modélisation des primitives
+	4. modélisation du shell
+	5. modélisation des fonctions supplémentaires
+3)  répartition des tâches
+4)  développement du modèle des données
+4°  Test du modèle des données
+5)  développement du SGF
+5°  Test du SGF en tenant compte des données
+6)  développement des primitives
+6°  Test des primitives en tenant compte du SGF et des données
+7)  développement du shell
+7°  Test du shell en tenant compte des primitives, du SGF et des données
+8)  développement des fonctions supplémentaires
+9°  Test des fonctions supplémentaires en tenant compte des primitives, du shell, du SGF et des données
+10) écriture du rapport et réalisation de la PAO
+11) modélisation des fonctions bonus
+12) développement des fonctions bonus
+12° Test des fonctions bonus en tenant compte du projet global
+13) Mise à jour du rapport et de la PAO

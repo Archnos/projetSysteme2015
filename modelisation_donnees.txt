@@ -1,0 +1,22 @@
+entité de base : bloc de données
+Trois types de bloc :
+	- i-node
+	- données
+	- vide
+Une partition est un ensemble +/- indéterminé de blocs de données
+
+Fonctionnement du SGF sous la forme d'une arborescence.
+Chaque élément de l'arbre (racine, noeud, feuille) est un fichier = un inode pointant sur un ou plusieurs blocs.
+Si le fichier est un répertoire (racine ou noeud), le bloc est un bloc i-nodes qui contient un bloc de données spécifiques : un tableau reliant les i-nodes aux noms de fichiers présents dans ledit répertoire.
+Si le fichier est un fichier texte standard, le bloc est un bloc i-nodes qui contient la liste de tous les blocs de données contenant le contenu dudit fichier.
+Un bloc non utilisé est un bloc vide.
+
+QUESTION : un bloc non vide =? non initialisé ou =? initialisé à null
+QUESTION : est-ce que par défaut on initialise tous les blocs créés ? Ou est-ce qu'on attend de connaître le type du bloc ?
+QUESTION : comment organise-t-on les blocs ? Tous les blocs i-nodes puis tous les vides puis tous les données ? Ou en vrac ?
+QUESTION : un fichier répertoire pointe sur un bloc données contenant les adresses des blocs i-node des fichiers contenus dans le répertoire, 
+
+Contenu des blocs selon leur type :
+
+1° Bloc d'i-node
+	
