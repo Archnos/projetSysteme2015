@@ -1,0 +1,10 @@
+Deux types de modélisation :
+1)i-node pointe sur tête LC qui pointe sur BD
+ou
+2)i-node point sur tous les BD
+
+Si 2) : est-ce qu'on limite la taille des fichiers ? (plus cohérent => tableau pour stocker les adresses des BD)
+Si 1) : avantage = taille illimitée, mais les blocs vides seraient inutiles. inconvénient = accès aux MD plus lent
+
+Notre proposition = 1) et si on arrive à la taille max du fichier, le dernier bloc contient un pointeur sur l'i-node d'un nouveau fichier
+on aurait ainsi une LC de fichiers
